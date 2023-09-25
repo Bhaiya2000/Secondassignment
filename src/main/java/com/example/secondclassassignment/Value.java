@@ -1,2 +1,8 @@
-package com.example.secondclassassignment;public record Value() {
+package com.example.secondclassassignment;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record Value(Long id, String quote) {
+
 }
